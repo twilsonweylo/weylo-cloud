@@ -13,5 +13,11 @@
         <input type="text" name="message" placeholder="Type your message...">
         <button type="submit">Send</button>
     </form>
+
+    {% if reply %}
+      <div id="reply" style="margin-top:20px;">
+        <strong>Weylo:</strong> {{ reply }}
+      </div>
+    {% endif %}
 </body>
 </html>
